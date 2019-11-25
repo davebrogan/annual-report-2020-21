@@ -1,0 +1,233 @@
+@import "../utilities/ui-utilities-master/variables";
+@import "../utilities/ui-utilities-master/placeholders";
+@import "../utilities/ui-utilities-master/functions";
+@import "../utilities/ui-utilities-master/mixins";
+
+/***
+BANNERS
+***/
+.banner-image, .banner-image img {
+  width: 100%;
+}
+
+/***
+LINK STRIP ************************************
+***/
+.link-strip {
+  background-color: wsu-palette($wcpurp-colors, 1);
+  a:hover {
+    color: wsu-palette($hlcolor-colors, 2);
+  }
+}
+
+/***
+LOGO *******************************************
+***/
+.ar-logo {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  &__wrapper {
+    width: 250px;
+    border-bottom: 1px solid #cacaca;
+    border-top: 1px solid #cacaca;
+  }
+  &__image {
+    margin-top: 1rem;
+  }
+  &__description {
+    color: wsu-palette($wcpurp-colors, 1);
+    font-family: 'tradegothiclt-condeighteen', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+/***
+HOME PAGE HEADLINES *****************************
+***/
+h2.content-men-headline {
+  text-transform: uppercase !important;
+  .featured-articles & {
+    margin-bottom: 70px !important;
+  }
+}
+
+/***
+CONTENTS ****************************************
+***/
+.menu-stack {
+  display: flex;
+  justify-content: center;
+  ul {
+    margin-bottom: 0;
+    }
+  li {
+    list-style-type: none;
+    height: 41px;
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: $break-laptop) {
+      height: 50px;
+    }
+
+    .menu-disc {
+      @include circle-image(20px, 100%);
+      margin-right: 10px;
+    }
+  }
+}
+
+.pres-disc {
+  background-color: wsu-palette($wcpurp-colors,1);
+}
+.east-disc {
+  background-color: wsu-palette($east-colors,1);
+}
+.lind-disc {
+  background-color: wsu-palette($lind-colors,1);
+}
+.moyes-disc {
+  background-color: wsu-palette($moyes-colors,1);
+}
+.godd-disc {
+  background-color: wsu-palette($godd-colors,1);
+}
+.students-disc {
+  background-color: wsu-palette($wsublue-colors,2);
+}
+.csbs-disc {
+  background-color: wsu-palette($csbs-colors,1);
+}
+.dumke-disc {
+  background-color: wsu-palette($dumke-colors,1);
+}
+.cos-disc {
+  background-color: wsu-palette($cos-colors,1);
+}
+.comm-disc {
+  background-color: wsu-palette($wsured-colors,1);
+}
+.athletics-disc {
+  background-color: wsu-palette($wcpurp-colors,2);
+}
+.faculty-disc {
+  background-color: wsu-palette($wsubrown-colors,1);
+}
+
+a.menu-item {
+  display: inline-block;
+  text-decoration: none;
+  color: #575047;
+  font-family: 'tradegothicltcom-bd2', sans-serif;
+  padding: 10px 10px 10px 5px;
+  font-size: 18px;
+  width: calc(100% - 50px);
+  line-height: 1em;
+}
+
+a.menu-item:hover {
+  cursor: pointer;
+  color: #FFF;
+  background-color: wsu-palette($hlcolor-colors, 2);
+}
+
+/***
+FEATURED STORIES **********************************
+***/
+.feature-tile {
+  display: flex;
+  margin-bottom: 12px;
+  flex-direction: column;
+  &__text {
+    font-family: 'tradegothiclt', sans-serif;
+  }
+  &--left {
+    color: #FFF;
+    align-items: flex-start;
+    @media #{$target-tablet-over} {
+      margin-right: 5vw;
+
+    }
+    @media #{$target-laptop-over} {
+      flex-direction: row-reverse;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    .feature-tile__title, .feature-tile__title a, .feature-tile__title a:visited {
+      color: #FFF;
+    }
+
+    .feature-tile__title a:hover {
+      color: #A391B1;
+    }
+
+    .feature-tile__img {
+      clip-path: polygon(0 0, 70% 0, 100% 100%, 0 100%);
+      @media #{$target-laptop-over} {
+        clip-path: polygon(0 0, 70% 0, 87% 100%, 0 100%);
+      }
+    }
+  }
+
+  &--right {
+    color: inherit;
+    align-items: flex-end;
+    @media #{$target-tablet-over} {
+      margin-left: 5vw;
+    }
+    @media #{$target-laptop-over} {
+      flex-direction: row;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    .feature-tile__title, .feature-tile__title a, .feature-tile__title a:visited {
+      color: $gray-text;
+    }
+
+    .feature-tile__title a:hover {
+      color: wsu-palette($wcpurp-colors, 1);
+    }
+
+    .feature-tile__img {
+      clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+      @media #{$target-laptop-over} {
+        clip-path: polygon(30% 0, 100% 0, 100% 100%, 13% 100%);
+      }
+    }
+  }
+
+  &__content, &__img {
+    display: flex;
+  }
+
+  &__content {
+    flex-direction: column;
+    justify-content: center;
+    padding: 3em;
+    @media #{$target-tablet-over} {
+      max-width: 575px;
+    }
+  }
+  &__img {
+    //max-width: 332px;
+    @media #{$target-tablet-over} {
+      min-width: 350px;
+      max-width: 500px;
+      position: relative;
+      top: -47px;
+      margin-bottom: -47px;
+    }
+
+    &::after {
+      content: " ";
+      background-color: #fff;
+      position: absolute;
+      width: 100%;
+    }
+  }
+}
+

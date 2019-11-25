@@ -1,0 +1,40 @@
+@import "../utilities/ui-utilities-master/variables";
+@import "../utilities/ui-utilities-master/placeholders";
+@import "../utilities/ui-utilities-master/functions";
+@import "../utilities/ui-utilities-master/mixins";
+
+/***
+Article Background Banners
+***/
+.banner--banner-name {
+  min-height: 350px;
+  margin: 30px 0;
+  @include bg-interchange-retina('URL');
+}
+
+/***
+Pull Quote Background
+***/
+.pullquote--name {
+  padding: 2em;
+  background-color: #ece9ef;
+  margin-bottom: 20px;
+}
+
+/***
+Custom Fonts
+***/
+@font-face {
+  font-family: "Clarbold";
+  src: url(https://www.weber.edu/wsuimages/annualreport/fonts/Clarendon-ExtraBold.woff), url(https://www.weber.edu/wsuimages/annualreport/fonts/Clarendon-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: "Praktika";
+  src: url(https://www.weber.edu/wsuimages/annualreport/fonts/Praktika-ExtraBold.woff), url(https://www.weber.edu/wsuimages/annualreport/fonts/Praktika-ExtraBold.ttf);
+}
+
+@font-face {
+  font-family: "Thirsty";
+  src: url(https://www.weber.edu/wsuimages/annualreport/fonts/thirsty-rough-light.woff), url(https://www.weber.edu/wsuimages/annualreport/fonts/thirsty-rough-light.ttf);
+}

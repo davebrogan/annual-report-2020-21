@@ -1,0 +1,1 @@
+cat ui-global-styles-min.css ui-mod-base.min.css annual-report-main.min.css | tr '\n' ' ' > annual-report-styles-min.css

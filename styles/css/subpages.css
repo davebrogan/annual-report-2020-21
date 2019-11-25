@@ -1,0 +1,148 @@
+#hide-clar-load, #hide-title-load {
+  visibility: hidden;
+}
+
+/***
+Resets
+***/
+.page-title-space {
+  padding: 0;
+}
+
+strong, b {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: bold;
+}
+
+.text-box {
+  padding: 0;
+}
+
+.showcase-html-section h1 {
+  color: #492365;
+  font-family: "tradegothicltstd-boldext", sans-serif;
+  margin: 1em;
+  text-align: center;
+  font-size: 2rem;
+}
+
+/***
+Offscreen Text Content For Screen Readers
+***/
+.sr-only {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  top: auto;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/***
+Title With Custom Fonts
+***/
+h2.lead-article__title {
+  margin-bottom: 20px !important;
+  line-height: 1;
+}
+h2.lead-article__title .ar-block-text {
+  font-family: "Praktika", sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+h2.lead-article__title .ar-script-text {
+  font-family: "Thirsty", cursive;
+  font-size: 1.5em;
+}
+
+/***
+Lead Article
+***/
+.lead-article-section, .main-article-section {
+  padding: 1em 0;
+}
+
+.lead-article__image {
+  max-width: 600px;
+}
+
+/***
+Image floats for Regular Articles
+***/
+.float-left {
+  float: left;
+  margin-right: 20px;
+}
+
+.float-right {
+  float: right;
+  margin-left: 20px;
+}
+
+/***
+CUSTOM HR
+***/
+.custom-hr {
+  text-align: center;
+}
+.custom-hr img {
+  width: 30px;
+  position: relative;
+  top: -35px;
+}
+
+/***
+Text Box with Background Banner
+***/
+.color-background-box--gray-white-color {
+  background-color: rgba(246, 251, 238, 0.9);
+}
+
+.text-box h2.text-box__title {
+  font-family: "tradegothiclt-bold", sans-serif;
+  font-weight: normal !important;
+  margin-bottom: 0 !important;
+  font-size: 1.5rem;
+  color: #575047;
+}
+
+/***
+Pull-Quotes
+***/
+.ar2019-pullquote__body--med {
+  font-family: "tradegothiclt-condeighteen", sans-serif !important;
+  font-size: 1.5em;
+}
+.ar2019-pullquote__body--large {
+  font-family: "tradegothiclt-condeighteen", sans-serif !important;
+  font-size: 2em;
+}
+
+/***
+Pull-Quote Stats
+***/
+.ar2019-stat {
+  padding: 1em;
+  text-align: center;
+}
+.ar2019-stat__title {
+  font-size: 1.4em !important;
+}
+.ar2019-stat__number {
+  font-size: 3.7em;
+  font-family: "Clarbold", serif;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+.ar2019-stat__description {
+  font-size: 1.3em;
+  font-family: "tradegothicltcom-bdcn20", sans-serif;
+  line-height: 1.2;
+  margin-bottom: 40px;
+}
+
+/*# sourceMappingURL=subpages.css.map */
