@@ -3,9 +3,6 @@
 @import "../utilities/ui-utilities-master/functions";
 @import "../utilities/ui-utilities-master/mixins";
 
-/***
-BANNERS
-***/
 .banner-image, .banner-image img {
   width: 100%;
 }
@@ -47,7 +44,7 @@ LOGO *******************************************
 /***
 HOME PAGE HEADLINES *****************************
 ***/
-h2.content-men-headline {
+h2.cont-men-headline {
   text-transform: uppercase !important;
   .featured-articles & {
     margin-bottom: 70px !important;
@@ -59,7 +56,7 @@ CONTENTS ****************************************
 ***/
 .menu-stack {
   display: flex;
-  justify-content: center;
+  //justify-content: center;
   ul {
     margin-bottom: 0;
     }

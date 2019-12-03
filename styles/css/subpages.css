@@ -1,7 +1,3 @@
-#hide-clar-load, #hide-title-load {
-  visibility: hidden;
-}
-
 /***
 Resets
 ***/
@@ -40,23 +36,6 @@ Offscreen Text Content For Screen Readers
   width: 1px;
   height: 1px;
   overflow: hidden;
-}
-
-/***
-Title With Custom Fonts
-***/
-h2.lead-article__title {
-  margin-bottom: 20px !important;
-  line-height: 1;
-}
-h2.lead-article__title .ar-block-text {
-  font-family: "Praktika", sans-serif;
-  font-size: 2em;
-  text-transform: uppercase;
-}
-h2.lead-article__title .ar-script-text {
-  font-family: "Thirsty", cursive;
-  font-size: 1.5em;
 }
 
 /***
@@ -128,15 +107,6 @@ Pull-Quote Stats
 .ar2019-stat {
   padding: 1em;
   text-align: center;
-}
-.ar2019-stat__title {
-  font-size: 1.4em !important;
-}
-.ar2019-stat__number {
-  font-size: 3.7em;
-  font-family: "Clarbold", serif;
-  line-height: 1;
-  margin-bottom: 10px;
 }
 .ar2019-stat__description {
   font-size: 1.3em;

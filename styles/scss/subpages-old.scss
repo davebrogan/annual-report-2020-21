@@ -3,6 +3,10 @@
 @import "../utilities/ui-utilities-master/functions";
 @import "../utilities/ui-utilities-master/mixins";
 
+#hide-clar-load, #hide-title-load {
+  visibility: hidden;
+}
+
 /***
 Resets
 ***/
@@ -41,6 +45,23 @@ Offscreen Text Content For Screen Readers
   width: 1px;
   height: 1px;
   overflow: hidden;
+}
+
+/***
+Title With Custom Fonts
+***/
+h2.lead-article__title {
+  margin-bottom: 20px !important;
+  line-height: 1;
+  .ar-block-text {
+	font-family: "Praktika", sans-serif;
+	font-size: 2em;
+	text-transform: uppercase;
+  }
+  .ar-script-text {
+	font-family: "Thirsty", cursive;
+	font-size: 1.5em;
+  }
 }
 
 /***
@@ -85,8 +106,7 @@ CUSTOM HR
 Text Box with Background Banner
 ***/
 .color-background-box--gray-white-color {
-  //background-color: rgba(246,251,238, 0.9);
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(246,251,238, 0.9);
 }
 
 .text-box h2.text-box__title {
@@ -120,6 +140,16 @@ Pull-Quote Stats
 .ar2019-stat {
   padding: 1em;
   text-align: center;
+  &__title {
+	//font-family: "tradegothicltcom-bdcn20", sans-serif;
+	font-size: 1.4em !important;
+  }
+  &__number {
+	font-size: 3.7em;
+	font-family: 'Clarbold', serif;
+	line-height: 1;
+	margin-bottom: 10px;
+  }
   &__description {
 	font-size: 1.3em;
 	font-family: "tradegothicltcom-bdcn20", sans-serif;
