@@ -1,0 +1,10 @@
+
+Annual Report Builder - Notes
+
+There is a Annual Report Template flowchart pdf in local file that shows process for global, project-level and page-level stylesheets.
+
+There is a page build to provide asset creation guidance to designers and other content providers.
+
+There should be a page demonstrating the different UI elements and maybe even put the code there. Or build the style-guide in Google Docs.
+
+Copy the codebase each year for each build. The codebase is production only. I don't think there is a dev version.

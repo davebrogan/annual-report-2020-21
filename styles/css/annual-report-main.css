@@ -8,8 +8,38 @@ LINK STRIP ************************************
 .link-strip {
   background-color: #492365;
 }
+.link-strip .link-cell {
+  padding: 10px 0;
+  text-align: center;
+}
+@media screen and (max-width: 480px) {
+  .link-strip .link-cell {
+    padding: 20px 0;
+  }
+}
+.link-strip a {
+  text-decoration: none;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-family: "tradegothicltcom-bd2", sans-serif;
+  color: #FFF;
+}
+@media screen and (max-width: 480px) {
+  .link-strip a {
+    font-size: 1.2em;
+  }
+}
 .link-strip a:hover {
   color: #c1a2d5;
+}
+.link-strip .link-strip-left {
+  border-right: 2px solid #FFF;
+}
+@media screen and (max-width: 640px) {
+  .link-strip .link-strip-left {
+    border-right: none;
+    border-bottom: 2px solid #FFF;
+  }
 }
 
 /***
@@ -51,6 +81,11 @@ CONTENTS ****************************************
 ***/
 .menu-stack {
   display: flex;
+}
+@media only screen and (min-width: 769px) {
+  .menu-stack {
+    justify-content: center;
+  }
 }
 .menu-stack ul {
   margin-bottom: 0;
@@ -173,10 +208,12 @@ FEATURED STORIES **********************************
   color: #A391B1;
 }
 .feature-tile--left .feature-tile__img {
+  -webkit-clip-path: polygon(0 0, 70% 0, 100% 100%, 0 100%);
   clip-path: polygon(0 0, 70% 0, 100% 100%, 0 100%);
 }
 @media only screen and (min-width: 1025px) {
   .feature-tile--left .feature-tile__img {
+    -webkit-clip-path: polygon(0 0, 70% 0, 87% 100%, 0 100%);
     clip-path: polygon(0 0, 70% 0, 87% 100%, 0 100%);
   }
 }
@@ -203,10 +240,12 @@ FEATURED STORIES **********************************
   color: #492365;
 }
 .feature-tile--right .feature-tile__img {
+  -webkit-clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
   clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
 }
 @media only screen and (min-width: 1025px) {
   .feature-tile--right .feature-tile__img {
+    -webkit-clip-path: polygon(30% 0, 100% 0, 100% 100%, 13% 100%);
     clip-path: polygon(30% 0, 100% 0, 100% 100%, 13% 100%);
   }
 }
@@ -395,5 +434,3 @@ PRES LETTER
   display: block;
   margin-bottom: 10px;
 }
-
-/*# sourceMappingURL=annual-report-main.css.map */
