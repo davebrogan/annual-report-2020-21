@@ -101,6 +101,7 @@ Text Box with Background Banner
 Pull-Quotes
 ***/
 .ar2019-pullquote {
+  padding: 2em;
   &__title {
 	//margin-bottom: 20px;
   }
@@ -112,13 +113,18 @@ Pull-Quotes
 	font-family: "tradegothiclt-condeighteen", sans-serif !important;
 	font-size: 2em;
   }
+  &--flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 /***
 Pull-Quote Stats
 ***/
 .ar2019-stat {
-  padding: 1em;
+  padding: 2em;
   text-align: center;
   &__description {
 	font-size: 1.3em;
@@ -126,4 +132,38 @@ Pull-Quote Stats
 	line-height: 1.2;
 	margin-bottom: 40px;
   }
+}
+
+/*** TILES ***/
+.comm-tile {
+  display: flex;
+}
+
+.comm-tile--left {
+  justify-content: flex-start;
+}
+
+.comm-tile--right {
+  justify-content: flex-end;
+}
+
+@media only screen and (max-width: 500px) {
+  .comm-tile--left, .comm-tile--right {
+    justify-content: center;
+  }
+}
+
+.comm-tile > div {
+  width: 350px;
+  height: 350px;
+  background-color: #492365;
+  color: #FFF;
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'tradegothicltcom-bdcn20', sans-serif;
+  font-size: 1.2em;
 }
