@@ -1,8 +1,78 @@
+@charset "UTF-8";
+
 @import "../utilities/ui-utilities-master/variables";
 @import "../utilities/ui-utilities-master/placeholders";
 @import "../utilities/ui-utilities-master/functions";
 @import "../utilities/ui-utilities-master/mixins";
 
+/***
+**** GLOBAL RULES
+***/
+.banner {
+  position: relative;
+  min-height: 350px;
+}
+
+
+/***
+**** HOME STYLES
+***/
 @import 'home.scss';
+
+
+/***
+**** CUSTOM FONTS
+***/
+@font-face {
+  font-family: honest-designer;
+  src: url("https://www.weber.edu/wsuimages/coronavirus/fonts/honestscript-regular-webfont.woff2") format("woff2"),
+  url("https://www.weber.edu/wsuimages/coronavirus/fonts/honestscript-regular-webfont.woff") format("woff");
+}
+
+/***
+**** SUBPAGE STYLES
+***/
 @import 'subpages.scss';
 @import 'facts-pres.scss';
+
+
+/***
+**** SUBPAGE BANNERS
+***/
+$banner-bottom: 30px;
+
+.banner--subpage--students {
+  @include bg-interchange-retina('');
+  margin-bottom: $banner-bottom;
+}
+.banner--costume {
+  @include bg-interchange-retina('');
+  margin-bottom: $banner-bottom;
+}
+.banner--student-discoveries {
+  @include bg-interchange-retina('');
+  margin-bottom: $banner-bottom;
+}
+.banner--student-football {
+  @include bg-interchange-retina('');
+  margin-bottom: $banner-bottom;
+}
+.banner--locker-room-research {
+  @include bg-interchange-retina('');
+  margin-bottom: $banner-bottom;
+}
+.banner--new-course {
+  @include bg-interchange-retina('');
+}
+.banner--womens-center {
+  @include bg-interchange-retina('');
+  margin-bottom: $banner-bottom;
+}
+.banner--micro-fund {
+  @include bg-interchange-retina('');
+  @include bg-img-placement(right, top);
+  @media #{$target-laptop-under} {
+	@include bg-img-placement(center, top);
+  }
+  margin-bottom: $banner-bottom;
+}

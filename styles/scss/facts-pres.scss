@@ -16,6 +16,12 @@ FACTS AND FIGURES
         border-right: 2px solid #492365;
     }
 
+    .fact-box-centered {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
     .top-ten-list {
         background-color: wsu-palette($wcpurp-colors, 3);
     }
@@ -23,9 +29,9 @@ FACTS AND FIGURES
     .column {
         padding: 2%;
 
-        @media only screen and (min-width: 700px) and (max-width: 1023px) {
+        /*@media only screen and (min-width: 700px) and (max-width: 1023px) {
             padding: 0 20%;
-        }
+        }*/
 
         @media only screen and (min-width: $break-laptop) {
             img:not(.no-max) {
