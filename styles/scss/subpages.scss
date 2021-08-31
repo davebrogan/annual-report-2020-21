@@ -6,6 +6,12 @@
 /***
 Resets
 ***/
+figcaption {
+  padding: 5px;
+  font-style: italic;
+  font-size: .8em;
+}
+
 .page-title-space {
   padding: 0;
 }
@@ -27,6 +33,10 @@ strong, b {
 	text-align: center;
 	font-size: 2rem;
   }
+}
+
+.no-bottom-margin {
+  margin-bottom: 0 !important;
 }
 
 /***
@@ -54,7 +64,30 @@ Lead Article
   &__image {
 	max-width: 600px;
   }
+  &__subtitle {
+    margin-bottom: 1.5em;
+    font-style: oblique;
+  }
 }
+
+h3.article-subtitle {
+  font-style: oblique;
+  margin-bottom: 1.25em;
+}
+
+h2.lead-article {
+  &__title.title-override {
+    margin-bottom: 20px;
+    font-family: $font-tgbc20;
+    font-size: 2rem;
+    line-height: 1;
+    span {
+      font-family: 'honest-designer', cursive;
+      font-size: 3rem;
+    }
+  }
+}
+
 
 /***
 Image floats for Regular Articles
@@ -62,11 +95,24 @@ Image floats for Regular Articles
 .float-left {
   float: left;
   margin-right: 20px;
+  @media #{$target-large-phone} {
+    margin-right: 0;
+  }
 }
 
 .float-right {
   float: right;
   margin-left: 20px;
+  @media #{$target-large-phone} {
+    margin-left: 0;
+  }
+}
+
+.regular-article__image.float-left, .regular-article__image.float-right {
+  @media #{$target-large-phone} {
+    float: none !important;
+    margin-bottom: 20px;
+  }
 }
 
 /***
@@ -100,8 +146,11 @@ Text Box with Background Banner
 /***
 Pull-Quotes
 ***/
-.ar2019-pullquote {
+.ar-pullquote {
   padding: 2em;
+  @media #{$target-tablet-under} {
+    padding: 1em;
+  }
   &__title {
 	//margin-bottom: 20px;
   }
@@ -118,19 +167,43 @@ Pull-Quotes
     flex-direction: column;
     justify-content: center;
   }
+
+  &.pullquote--real-numbers {
+    margin: 4em 0;
+    & .ar-stat__title, & .ar-stat {
+      color: #fff;
+    }
+  }
 }
 
 /***
 Pull-Quote Stats
 ***/
-.ar2019-stat {
-  padding: 2em;
+.ar-stat {
+  padding: 1em 2em;
   text-align: center;
   &__description {
 	font-size: 1.3em;
 	font-family: "tradegothicltcom-bdcn20", sans-serif;
 	line-height: 1.2;
 	margin-bottom: 40px;
+  }
+}
+
+
+.ar-stat {
+  &__title {
+    //font-family: "tradegothicltcom-bdcn20", sans-serif;
+    font-size: 1.4em !important;
+  }
+  &__number {
+    font-size: 3.7em;
+    font-family: 'tradegothicltcom-bdcn20', serif;
+    line-height: 1;
+    margin-bottom: 10px;
+  }
+  &.inline-stats > p {
+    display: inline-block;
   }
 }
 
@@ -170,4 +243,36 @@ Pull-Quote Stats
 
 .comm-tile__icon {
   width: 100px;
+}
+
+.article-video-right {
+  float: right;
+  @media only screen and (max-width:700px) {
+    float:none;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+    position: relative;
+    height: 0;
+    margin-bottom: 1rem;
+    padding-bottom: 56.25%;
+    //overflow: hidden;
+  }
+}
+
+.article-video-left {
+  float: left;
+  @media only screen and (max-width:700px) {
+    float:none;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+    position: relative;
+    height: 0;
+    margin-bottom: 1rem;
+    padding-bottom: 56.25%;
+    //overflow: hidden;
+  }
 }

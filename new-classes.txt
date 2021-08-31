@@ -1,0 +1,24 @@
+.ar2019-stat -> .ar-stat
+
+.ar2019-pullquote -> .ar-pullquote
+
+.no-bottom-margin --- removes bottom margin with !important
+
+figcaption styling overrides
+
+.lead-article__subtitle
+
+h3.article-subtitle
+
+h2.lead-article
+h2.lead-article__title.title-override
+h2.lead-article__title.title-override span
+
+.ar-stat__title
+.ar-stat__number
+.ar-stat-inline-stats > p --- display: inline-block
+
+.article-video-right
+.article-video-left
+
+.fact-box-centered

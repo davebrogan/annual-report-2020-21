@@ -7,11 +7,40 @@
   width: 100%;
 }
 
+.banner {
+  position: relative;
+  &__text {
+    position: absolute;
+    bottom: -9px;
+    width: 70%;
+    @media #{$target-laptop-under} {
+      width: 90%;
+    }
+    max-width: 975px;
+    //min-width: 300px;
+  }
+  &-image {
+    @media #{$target-large-phone} {
+      display: none;
+    }
+  }
+}
+
+.banner--home {
+  @include aspect-ratio-source(3200, 1200);
+  @include bg-interchange-retina('https://www.weber.edu/wsuimages/annualreport/2020/images/home-banner-mobile-1x.jpg');
+  @media #{$target-tablet-over} {
+    @include bg-interchange-retina('https://www.weber.edu/wsuimages/annualreport/2020/images/home-banner-1x.jpg');
+  }
+}
+
 /***
 LINK STRIP ************************************
 ***/
 .link-strip {
   background-color: wsu-palette($wcpurp-colors, 1);
+  position: relative;
+  z-index: 100;
 
   .link-cell {
     padding: 10px 0;
@@ -33,6 +62,9 @@ LINK STRIP ************************************
 
     &:hover {
       color: wsu-palette($hlcolor-colors, 2);
+    }
+    &.menu-item {
+      width: 100%;
     }
   }
 
@@ -98,7 +130,15 @@ CONTENTS ****************************************
     @media screen and (max-width: $break-laptop) {
       height: 50px;
     }
-
+    &--left {
+      justify-content: flex-end;
+      @media #{$target-tablet-under} {
+        justify-content: flex-start;
+      }
+    }
+    &--right {
+      justify-content: flex-start;
+    }
     .menu-disc {
       @include circle-image(20px, 100%);
       margin-right: 10px;
