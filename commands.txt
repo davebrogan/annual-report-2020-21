@@ -1,4 +1,5 @@
-cat ui-global-styles-min.css ui-mod-base.min.css annual-report-main.min.css | tr '\n' ' ' > annual-report-styles-min.css
+cat ui-global-styles.min.css ui-mod-base.min.css annual-report-main.min.css | tr '\n' ' ' > annual-report-styles-min.css
+(this command is tricky, make sure you are executing from the /min directory and that the file names are correct.
 
 sass --no-source-map annual-report-main.scss ../css/annual-report-main.css //from scss
 

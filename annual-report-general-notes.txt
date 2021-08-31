@@ -1,0 +1,14 @@
+9/14/2020
+
+These files were duplicated from the template site in AnnualReport
+
+The "global" build has been fully tested and passes.
+
+The current structure uses a separate style sheet for custom fonts and js to delay visibility until font has loaded.
+This method was chosen after extensive testing of custom font loading techniques although it was not that much more efficient than other methods.
+
+There will be additional local css for the home page, which gets a custom design on the Featured Articles section each year. Everything else should be able to be built to native styles.
+
+See annual-report-workflow.txt for flow charts of the build process for global (annual report), project (custom type) and page (subpage, background colors and images) level build processes.
+
+Also see the gdoc Merge annual report 2020 into main template to read other possible additions from the 2020 production version to some version of a template. This 2020 template could be merged with further advancements from the 2020 production version to create a new overall template version.

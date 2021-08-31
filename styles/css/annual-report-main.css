@@ -436,6 +436,10 @@ Pull-Quote Stats
   font-size: 1.2em;
 }
 
+.comm-tile__icon {
+  width: 100px;
+}
+
 /***
 FACTS AND FIGURES
 ***/
