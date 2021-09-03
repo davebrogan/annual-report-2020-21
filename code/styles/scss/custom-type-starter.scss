@@ -16,38 +16,12 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'Praktika';
-  src: local('Praktika');
-  src: url("https://www.weber.edu/wsuimages/annualreport/fonts/Praktika-ExtraBold.eot"); /* IE9 Compat Modes */
-  src: url("https://www.weber.edu/wsuimages/annualreport/fonts/Praktika-ExtraBold.woff2") format("woff2"), /* Modern Browsers */
-  url("https://www.weber.edu/wsuimages/annualreport/fonts/Praktika-ExtraBold.woff") format("woff"), /* Modern Browsers */
-  url("https://www.weber.edu/wsuimages/annualreport/fonts/Praktika-ExtraBold.ttf") format("truetype"), /* Safari, Android, iOS */
-  url("https://www.weber.edu/wsuimages/annualreport/fonts/Praktika-ExtraBold.eot?#iefix") format("embedded-opentype"); /* IE6-IE8 */
-  unicode-range: U+0020-007E;
-  font-weight: 900;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Thirsty';
-  src: local('thirsty');
-  src: url("https://www.weber.edu/wsuimages/annualreport/fonts/thirsty-rough-light.eot"); /* IE9 Compat Modes */
-  src: url("https://www.weber.edu/wsuimages/annualreport/fonts/thirsty-rough-light.woff2") format("woff2"), /* Modern Browsers */
-  url("https://www.weber.edu/wsuimages/annualreport/fonts/thirsty-rough-light.woff") format("woff"), /* Modern Browsers */
-  url("https://www.weber.edu/wsuimages/annualreport/fonts/thirsty-rough-light.ttf") format("truetype"), /* Safari, Android, iOS */
-  url("https://www.weber.edu/wsuimages/annualreport/fonts/thirsty-rough-light.eot?#iefix") format("embedded-opentype"); /* IE6-IE8 */
-  unicode-range: U+0020-007E;
-  font-weight: normal;
-  font-style: normal;
-}
-
 /***
 Styles using custom fonts
 ***/
 
 /***
-Title With Custom Fonts
+Titles With Custom Fonts
 ***/
 h2.lead-article__title {
   margin-bottom: 20px !important;
