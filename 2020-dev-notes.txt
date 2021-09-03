@@ -1,0 +1,6 @@
+stay on merge-from-2020-production-compile-UNTESTED until you have successfully used this template to build the 2021 AR.
+THEN MINIFY, CAT and MERGE to Main
+
+Break out global, mod and annual report main for 2021 dev to cut down on compilation process.
+
+Merge this template with the current Template website in annualreport/template

@@ -2,6 +2,8 @@
 
 .ar2019-pullquote -> .ar-pullquote
 
+.ar2019-feature-title -> ar-feature-title
+
 .no-bottom-margin --- removes bottom margin with !important
 
 figcaption styling overrides
@@ -22,3 +24,4 @@ h2.lead-article__title.title-override span
 .article-video-left
 
 .fact-box-centered
+

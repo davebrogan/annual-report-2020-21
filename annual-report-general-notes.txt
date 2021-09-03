@@ -8,6 +8,7 @@ The current structure uses a separate style sheet for custom fonts and js to del
 This method was chosen after extensive testing of custom font loading techniques although it was not that much more efficient than other methods.
 
 There will be additional local css for the home page, which gets a custom design on the Featured Articles section each year. Everything else should be able to be built to native styles.
+Exception: some custom font styles, like in Clarendon in stats, will have to be added locally
 
 See annual-report-workflow.txt for flow charts of the build process for global (annual report), project (custom type) and page (subpage, background colors and images) level build processes.
 

@@ -1,5 +1,36 @@
+/***
+**** GLOBAL RULES
+***/
+.banner {
+  position: relative;
+  min-height: 350px;
+}
+
+/***
+**** HOME STYLES
+***/
 .banner-image, .banner-image img {
   width: 100%;
+}
+
+.banner {
+  position: relative;
+}
+.banner__text {
+  position: absolute;
+  bottom: -9px;
+  width: 70%;
+  max-width: 975px;
+}
+@media only screen and (max-width: 1023px) {
+  .banner__text {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .banner-image {
+    display: none;
+  }
 }
 
 /***
@@ -7,6 +38,8 @@ LINK STRIP ************************************
 ***/
 .link-strip {
   background-color: #492365;
+  position: relative;
+  z-index: 100;
 }
 .link-strip .link-cell {
   padding: 10px 0;
@@ -31,6 +64,9 @@ LINK STRIP ************************************
 }
 .link-strip a:hover {
   color: #c1a2d5;
+}
+.link-strip a.menu-item {
+  width: 100%;
 }
 .link-strip .link-strip-left {
   border-right: 2px solid #FFF;
@@ -100,6 +136,17 @@ CONTENTS ****************************************
   .menu-stack li {
     height: 50px;
   }
+}
+.menu-stack li--left {
+  justify-content: flex-end;
+}
+@media only screen and (max-width: 767px) {
+  .menu-stack li--left {
+    justify-content: flex-start;
+  }
+}
+.menu-stack li--right {
+  justify-content: flex-start;
 }
 .menu-stack li .menu-disc {
   width: 20px;
@@ -279,8 +326,24 @@ FEATURED STORIES **********************************
 }
 
 /***
+**** CUSTOM FONTS
+***/
+@font-face {
+  font-family: honest-designer;
+  src: url("https://www.weber.edu/wsuimages/coronavirus/fonts/honestscript-regular-webfont.woff2") format("woff2"), url("https://www.weber.edu/wsuimages/coronavirus/fonts/honestscript-regular-webfont.woff") format("woff");
+}
+/***
+**** SUBPAGE STYLES
+***/
+/***
 Resets
 ***/
+figcaption {
+  padding: 5px;
+  font-style: italic;
+  font-size: 0.8em;
+}
+
 .page-title-space {
   padding: 0;
 }
@@ -301,6 +364,10 @@ strong, b {
   margin: 1em;
   text-align: center;
   font-size: 2rem;
+}
+
+.no-bottom-margin {
+  margin-bottom: 0 !important;
 }
 
 /***
@@ -328,6 +395,26 @@ Lead Article
 .lead-article__image {
   max-width: 600px;
 }
+.lead-article__subtitle {
+  margin-bottom: 1.5em;
+  font-style: oblique;
+}
+
+h3.article-subtitle {
+  font-style: oblique;
+  margin-bottom: 1.25em;
+}
+
+h2.lead-article__title.title-override {
+  margin-bottom: 20px;
+  font-family: "tradegothicltcom-bdcn20", sans-serif;
+  font-size: 2rem;
+  line-height: 1;
+}
+h2.lead-article__title.title-override span {
+  font-family: "honest-designer", cursive;
+  font-size: 3rem;
+}
 
 /***
 Image floats for Regular Articles
@@ -336,10 +423,27 @@ Image floats for Regular Articles
   float: left;
   margin-right: 20px;
 }
+@media only screen and (max-width: 640px) {
+  .float-left {
+    margin-right: 0;
+  }
+}
 
 .float-right {
   float: right;
   margin-left: 20px;
+}
+@media only screen and (max-width: 640px) {
+  .float-right {
+    margin-left: 0;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .regular-article__image.float-left, .regular-article__image.float-right {
+    float: none !important;
+    margin-bottom: 20px;
+  }
 }
 
 /***
@@ -372,35 +476,59 @@ Text Box with Background Banner
 /***
 Pull-Quotes
 ***/
-.ar2019-pullquote {
+.ar-pullquote {
   padding: 2em;
 }
-.ar2019-pullquote__body--med {
+@media only screen and (max-width: 767px) {
+  .ar-pullquote {
+    padding: 1em;
+  }
+}
+.ar-pullquote__body--med {
   font-family: "tradegothiclt-condeighteen", sans-serif !important;
   font-size: 1.5em;
 }
-.ar2019-pullquote__body--large {
+.ar-pullquote__body--large {
   font-family: "tradegothiclt-condeighteen", sans-serif !important;
   font-size: 2em;
 }
-.ar2019-pullquote--flex {
+.ar-pullquote--flex {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.ar-pullquote.pullquote--real-numbers {
+  margin: 4em 0;
+}
+.ar-pullquote.pullquote--real-numbers .ar-stat__title, .ar-pullquote.pullquote--real-numbers .ar-stat {
+  color: #fff;
 }
 
 /***
 Pull-Quote Stats
 ***/
-.ar2019-stat {
-  padding: 2em;
+.ar-stat {
+  padding: 1em 2em;
   text-align: center;
 }
-.ar2019-stat__description {
+.ar-stat__description {
   font-size: 1.3em;
   font-family: "tradegothicltcom-bdcn20", sans-serif;
   line-height: 1.2;
   margin-bottom: 40px;
+}
+
+.ar-stat__title {
+  font-size: 1.4em !important;
+}
+.ar-stat__number {
+  font-size: 3.7em;
+  font-family: "tradegothicltcom-bdcn20", serif;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+.ar-stat.inline-stats > p {
+  display: inline-block;
 }
 
 /*** TILES ***/
@@ -440,6 +568,40 @@ Pull-Quote Stats
   width: 100px;
 }
 
+.article-video-right {
+  float: right;
+}
+@media only screen and (max-width: 700px) {
+  .article-video-right {
+    float: none;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+    position: relative;
+    height: 0;
+    margin-bottom: 1rem;
+    padding-bottom: 56.25%;
+  }
+}
+
+.article-video-left {
+  float: left;
+}
+@media only screen and (max-width: 700px) {
+  .article-video-left {
+    float: none;
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    margin: 30px auto;
+    position: relative;
+    height: 0;
+    margin-bottom: 1rem;
+    padding-bottom: 56.25%;
+  }
+}
+
 /***
 FACTS AND FIGURES
 ***/
@@ -452,16 +614,19 @@ FACTS AND FIGURES
 .fact-row .bord-rt {
   border-right: 2px solid #492365;
 }
+.fact-row .fact-box-centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 .fact-row .top-ten-list {
   background-color: #dbd3e0;
 }
 .fact-row .column {
   padding: 2%;
-}
-@media only screen and (min-width: 700px) and (max-width: 1023px) {
-  .fact-row .column {
-    padding: 0 20%;
-  }
+  /*@media only screen and (min-width: 700px) and (max-width: 1023px) {
+      padding: 0 20%;
+  }*/
 }
 @media only screen and (min-width: 1024px) {
   .fact-row .column img:not(.no-max) {
@@ -479,3 +644,97 @@ PRES LETTER
   display: block;
   margin-bottom: 10px;
 }
+
+/***
+**** SUBPAGE BANNERS
+***/
+.banner--subpage--students {
+  background-image: url("");
+  margin-bottom: 30px;
+}
+@media only screen and (min-width: 1024px) and (min-resolution: 192dpi) {
+  .banner--subpage--students {
+    background-image: url("");
+  }
+}
+
+.banner--costume {
+  background-image: url("");
+  margin-bottom: 30px;
+}
+@media only screen and (min-width: 1024px) and (min-resolution: 192dpi) {
+  .banner--costume {
+    background-image: url("");
+  }
+}
+
+.banner--student-discoveries {
+  background-image: url("");
+  margin-bottom: 30px;
+}
+@media only screen and (min-width: 1024px) and (min-resolution: 192dpi) {
+  .banner--student-discoveries {
+    background-image: url("");
+  }
+}
+
+.banner--student-football {
+  background-image: url("");
+  margin-bottom: 30px;
+}
+@media only screen and (min-width: 1024px) and (min-resolution: 192dpi) {
+  .banner--student-football {
+    background-image: url("");
+  }
+}
+
+.banner--locker-room-research {
+  background-image: url("");
+  margin-bottom: 30px;
+}
+@media only screen and (min-width: 1024px) and (min-resolution: 192dpi) {
+  .banner--locker-room-research {
+    background-image: url("");
+  }
+}
+
+.banner--new-course {
+  background-image: url("");
+}
+@media only screen and (min-width: 1024px) and (min-resolution: 192dpi) {
+  .banner--new-course {
+    background-image: url("");
+  }
+}
+
+.banner--womens-center {
+  background-image: url("");
+  margin-bottom: 30px;
+}
+@media only screen and (min-width: 1024px) and (min-resolution: 192dpi) {
+  .banner--womens-center {
+    background-image: url("");
+  }
+}
+
+.banner--micro-fund {
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right top;
+  margin-bottom: 30px;
+}
+@media only screen and (min-width: 1024px) and (min-resolution: 192dpi) {
+  .banner--micro-fund {
+    background-image: url("");
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .banner--micro-fund {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+  }
+}
+
+/*# sourceMappingURL=annual-report-main.css.map */

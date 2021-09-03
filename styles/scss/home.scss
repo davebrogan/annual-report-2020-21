@@ -26,14 +26,6 @@
   }
 }
 
-.banner--home {
-  @include aspect-ratio-source(3200, 1200);
-  @include bg-interchange-retina('https://www.weber.edu/wsuimages/annualreport/2020/images/home-banner-mobile-1x.jpg');
-  @media #{$target-tablet-over} {
-    @include bg-interchange-retina('https://www.weber.edu/wsuimages/annualreport/2020/images/home-banner-1x.jpg');
-  }
-}
-
 /***
 LINK STRIP ************************************
 ***/
