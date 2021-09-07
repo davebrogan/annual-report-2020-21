@@ -16,6 +16,16 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'honest-designer';
+  src: local('honest-designer');
+  src: url("https://www.weber.edu/wsuimages/annualreport/2020/fonts/honestscript-regular-webfont.woff2") format("woff2"),
+  url("https://www.weber.edu/wsuimages/annualreport/2020/fonts/honestscript-regular-webfont.woff") format("woff");
+  unicode-range: U+0020-007E;
+  font-weight: 700;
+  font-style: normal;
+}
+
 /***
 Styles using custom fonts
 ***/
@@ -37,7 +47,7 @@ h2.lead-article__title {
   }
 }
 
-.ar2019-stat {
+.ar-stat {
   &__title {
     //font-family: "tradegothicltcom-bdcn20", sans-serif;
     font-size: 1.4em !important;

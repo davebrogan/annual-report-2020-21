@@ -18,16 +18,13 @@
 **** HOME STYLES
 ***/
 @import 'home.scss';
+@import 'home-2021.scss';
 
 
 /***
 **** CUSTOM FONTS
 ***/
-@font-face {
-  font-family: honest-designer;
-  src: url("https://www.weber.edu/wsuimages/coronavirus/fonts/honestscript-regular-webfont.woff2") format("woff2"),
-  url("https://www.weber.edu/wsuimages/coronavirus/fonts/honestscript-regular-webfont.woff") format("woff");
-}
+
 
 /***
 **** SUBPAGE STYLES
