@@ -100,7 +100,7 @@
 //
 // like the aspect-ratio mixin but for custom width and height only
 //
-@mixin aspect-ratio-source($container-width:100vw, $aspect-width, $aspect-height) {
+@mixin aspect-ratio-source($aspect-width, $aspect-height, $container-width:100vw) {
   $height: calc(#{$container-width} * (#{$aspect-height} / #{$aspect-width}));
   &--aspect-#{$aspect-width}-#{$aspect-height} {
     height: #{$height};

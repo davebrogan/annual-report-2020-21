@@ -97,7 +97,6 @@
   //z-index: 100;
   //width: 100vw;
   //height: 100vh;
-
 }
 
 .ar-logo-second {
@@ -108,5 +107,73 @@
   z-index: 100;
 }
 
+.menu-stack li .menu-disc {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.featured-articles__banner {
+  //margin-bottom: 226px;
+}
+
+.banner {
+  &-feature {
+    //@include aspect-ratio-source(2400, 770);
+    padding: 1em;
+    //margin-bottom: 180px;
+    min-height: 400px;
+    @media #{$target-tablet-under} {
+      padding: 0;
+      //margin-bottom: 100px;
+    }
+    &__background-box {
+      position: absolute;
+      top: 80%;
+      background-color: wsu-palette($wcpurp-colors, 3, 9);
+      padding: 2em;
+      max-width: 656px;
+      @media #{$target-tablet-under} {
+        top: 66%;
+      }
+      h3 {
+        font-family: 'tradegothicltstd-boldext', sans-serif;
+        color: wsu-palette($wcpurp-colors, 1);
+        font-size: 2em;
+        margin-bottom: 30px;
+      }
+    }
+    &--digital-district {
+      @include bg-interchange-retina('https://www.weber.edu/wsuimages/annualreport/2021/images/home/digital-district-1x.jpg');
+      margin-bottom: 248px;
+    }
+    &--convos {
+      @include bg-interchange-retina('https://www.weber.edu/wsuimages/annualreport/2021/images/home/wildcat-convos-1x.jpg');
+      margin-bottom: 300px;
+    }
+    &--april {
+      @include bg-interchange-retina('https://www.weber.edu/wsuimages/annualreport/2021/images/home/april-callister-1x.jpg');
+      margin-bottom: 300px;
+
+    }
+    &--virtual-innovations {
+      @include bg-interchange-retina('https://www.weber.edu/wsuimages/annualreport/2021/images/home/virtual-innovations-1x.jpg');
+      margin-bottom: 300px;
+
+      .banner-feature__background-box {
+        top: 68%;
+      }
+    }
+    &--sustainability {
+      @include bg-interchange-retina('https://www.weber.edu/wsuimages/annualreport/2021/images/home/sustainability-1x.jpg');
+      margin-bottom: 300px;
+    }
+    &--athletics {
+      @include bg-interchange-retina('https://www.weber.edu/wsuimages/annualreport/2021/images/home/vball-1x.jpg');
+      margin-bottom: 300px;
+    }
+  }
+}
 
 
