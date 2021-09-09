@@ -498,12 +498,30 @@ strong, b {
   padding: 0;
 }
 
-.showcase-html-section h1 {
-  color: #492365;
-  font-family: "tradegothicltstd-boldext", sans-serif;
-  margin: 1em;
+/**************************************************************
+****************************************************************
+****************************************************************
+*************** NEW H1 *****************************************
+****************************************************************
+***************************************************************/
+.showcase-html-section h1.page-title-banner {
+  width: 100%;
+  padding: 1em;
   text-align: center;
-  font-size: 2rem;
+  color: #492365;
+  background: url("https://www.weber.edu/wsuimages/annualreport/2021/graphics/section-header-mtns.svg") #f3f3f3;
+  background-repeat: no-repeat;
+  background-position: 30% 50%;
+  background-size: 27%;
+  margin: 30px 0 30px 0;
+  font-size: 3em;
+}
+.showcase-html-section h1.page-title-banner span.page-title-banner__tg {
+  font-family: "tradegothiclt", sans-serif;
+}
+.showcase-html-section h1.page-title-banner span.page-title-banner__ext {
+  font-family: "tradegothicltstd-boldext", sans-serif;
+  text-transform: uppercase;
 }
 
 .no-bottom-margin {
