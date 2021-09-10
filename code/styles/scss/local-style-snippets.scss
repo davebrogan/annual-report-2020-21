@@ -6,10 +6,30 @@
 /***
 Article Background Banners
 ***/
-.banner--banner-name {
+.banner--name {
   min-height: 350px;
   margin: 30px 0;
   @include bg-interchange-retina('URL');
+}
+.banner--timber {
+  min-height: 350px;
+  margin: 30px 0;
+  @include bg-interchange-retina('https://www.weber.edu/wsuimages/annualreport/2021/images/students/timber-1x.jpg');
+  background-position-y: bottom;
+}
+/***
+Regular Article Titles
+***/
+.regular-article__title {
+  margin-bottom: 20px !important;
+}
+.regular-article__title-with-sub {
+
+}
+.regular-article__subtitle, .text-box__subtitle {
+  font-family: $font-tgbc20o;
+  font-size: 1.3em;
+  margin-bottom: 20px !important;
 }
 
 /***

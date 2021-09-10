@@ -513,7 +513,6 @@ strong, b {
   background-repeat: no-repeat;
   background-position: 30% 50%;
   background-size: 27%;
-  margin: 30px 0 30px 0;
   font-size: 3em;
 }
 .showcase-html-section h1.page-title-banner span.page-title-banner__tg {
@@ -801,6 +800,52 @@ PRES LETTER
   width: 200px;
   display: block;
   margin-bottom: 10px;
+}
+
+/***
+Article Background Banners
+***/
+.banner--name {
+  min-height: 350px;
+  margin: 30px 0;
+  background-image: url("URL");
+}
+@media only screen and (min-width: 1024px) and (min-resolution: 192dpi) {
+  .banner--name {
+    background-image: url("URL");
+  }
+}
+
+.banner--timber {
+  min-height: 350px;
+  margin: 30px 0;
+  background-image: url("https://www.weber.edu/wsuimages/annualreport/2021/images/students/timber-1x.jpg");
+}
+@media only screen and (min-width: 1024px) and (min-resolution: 192dpi) {
+  .banner--timber {
+    background-image: url("https://www.weber.edu/wsuimages/annualreport/2021/images/students/timber-2x.jpg");
+  }
+}
+
+/***
+Regular Article Titles
+***/
+.regular-article__title {
+  margin-bottom: 20px !important;
+}
+
+.regular-article__subtitle, .text-box__subtitle {
+  font-family: "tradegothicltcom-bdcn20obl", sans-serif;
+  font-size: 1.3em;
+  margin-bottom: 20px !important;
+}
+
+/***
+Pull Quote Background
+***/
+.pullquote--name {
+  background-color: #ece9ef;
+  margin-bottom: 20px;
 }
 
 /***
