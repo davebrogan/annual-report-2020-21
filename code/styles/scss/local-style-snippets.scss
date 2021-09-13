@@ -17,6 +17,12 @@ Article Background Banners
   @include bg-interchange-retina('https://www.weber.edu/wsuimages/annualreport/2021/images/students/timber-1x.jpg');
   background-position-y: bottom;
 }
+.banner--sustainability {
+  min-height: 350px;
+  margin: 30px 0;
+  @include bg-interchange-retina('https://www.weber.edu/wsuimages/annualreport/2021/images/faculty-staff/sustainability-1x.jpg');
+}
+
 /***
 Regular Article Titles
 ***/

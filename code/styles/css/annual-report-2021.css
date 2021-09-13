@@ -820,10 +820,22 @@ Article Background Banners
   min-height: 350px;
   margin: 30px 0;
   background-image: url("https://www.weber.edu/wsuimages/annualreport/2021/images/students/timber-1x.jpg");
+  background-position-y: bottom;
 }
 @media only screen and (min-width: 1024px) and (min-resolution: 192dpi) {
   .banner--timber {
     background-image: url("https://www.weber.edu/wsuimages/annualreport/2021/images/students/timber-2x.jpg");
+  }
+}
+
+.banner--sustainability {
+  min-height: 350px;
+  margin: 30px 0;
+  background-image: url("https://www.weber.edu/wsuimages/annualreport/2021/images/faculty-staff/sustainability-1x.jpg");
+}
+@media only screen and (min-width: 1024px) and (min-resolution: 192dpi) {
+  .banner--sustainability {
+    background-image: url("https://www.weber.edu/wsuimages/annualreport/2021/images/faculty-staff/sustainability-2x.jpg");
   }
 }
 
@@ -868,74 +880,5 @@ Pull Quote Background
 @media only screen and (min-width: 1024px) and (min-resolution: 192dpi) {
   .banner--costume {
     background-image: url("");
-  }
-}
-
-.banner--student-discoveries {
-  background-image: url("");
-  margin-bottom: 30px;
-}
-@media only screen and (min-width: 1024px) and (min-resolution: 192dpi) {
-  .banner--student-discoveries {
-    background-image: url("");
-  }
-}
-
-.banner--student-football {
-  background-image: url("");
-  margin-bottom: 30px;
-}
-@media only screen and (min-width: 1024px) and (min-resolution: 192dpi) {
-  .banner--student-football {
-    background-image: url("");
-  }
-}
-
-.banner--locker-room-research {
-  background-image: url("");
-  margin-bottom: 30px;
-}
-@media only screen and (min-width: 1024px) and (min-resolution: 192dpi) {
-  .banner--locker-room-research {
-    background-image: url("");
-  }
-}
-
-.banner--new-course {
-  background-image: url("");
-}
-@media only screen and (min-width: 1024px) and (min-resolution: 192dpi) {
-  .banner--new-course {
-    background-image: url("");
-  }
-}
-
-.banner--womens-center {
-  background-image: url("");
-  margin-bottom: 30px;
-}
-@media only screen and (min-width: 1024px) and (min-resolution: 192dpi) {
-  .banner--womens-center {
-    background-image: url("");
-  }
-}
-
-.banner--micro-fund {
-  background-image: url("");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: right top;
-  margin-bottom: 30px;
-}
-@media only screen and (min-width: 1024px) and (min-resolution: 192dpi) {
-  .banner--micro-fund {
-    background-image: url("");
-  }
-}
-@media only screen and (max-width: 1023px) {
-  .banner--micro-fund {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center top;
   }
 }

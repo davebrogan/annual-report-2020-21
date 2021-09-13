@@ -46,30 +46,4 @@ $banner-bottom: 30px;
   @include bg-interchange-retina('');
   margin-bottom: $banner-bottom;
 }
-.banner--student-discoveries {
-  @include bg-interchange-retina('');
-  margin-bottom: $banner-bottom;
-}
-.banner--student-football {
-  @include bg-interchange-retina('');
-  margin-bottom: $banner-bottom;
-}
-.banner--locker-room-research {
-  @include bg-interchange-retina('');
-  margin-bottom: $banner-bottom;
-}
-.banner--new-course {
-  @include bg-interchange-retina('');
-}
-.banner--womens-center {
-  @include bg-interchange-retina('');
-  margin-bottom: $banner-bottom;
-}
-.banner--micro-fund {
-  @include bg-interchange-retina('');
-  @include bg-img-placement(right, top);
-  @media #{$target-laptop-under} {
-	@include bg-img-placement(center, top);
-  }
-  margin-bottom: $banner-bottom;
-}
+
