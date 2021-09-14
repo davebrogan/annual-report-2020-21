@@ -6,14 +6,20 @@
 /***
 FACTS AND FIGURES
 ***/
+
+.fact-head-text {
+    color: #fff !important;
+    font-size: 3em !important;
+}
+
 .fact-row {
     display: flex;
-    border-bottom: 2px solid #492365;
+    border-bottom: 2px solid #FFFFFF;
     padding-top: 40px;
     padding-bottom: 40px;
 
     .bord-rt {
-        border-right: 2px solid #492365;
+        border-right: 2px solid #FFFFFF;
     }
 
     .fact-box-centered {
@@ -29,10 +35,6 @@ FACTS AND FIGURES
     .column {
         padding: 2%;
 
-        /*@media only screen and (min-width: 700px) and (max-width: 1023px) {
-            padding: 0 20%;
-        }*/
-
         @media only screen and (min-width: $break-laptop) {
             img:not(.no-max) {
                 max-width: 400px;
@@ -41,8 +43,13 @@ FACTS AND FIGURES
             }
         }
     }
+    &.fact-row-last {
+        border-bottom: none;
+    }
 }
-
+.fact-box.military {
+    background: none;
+}
 /***
 PRES LETTER
 ***/

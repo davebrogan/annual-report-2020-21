@@ -114,6 +114,22 @@
   align-items: center;
 }
 
+.menu-stack {
+  @media #{$target-tablet-under} {
+    //display: block;
+    // margin-left: 20%;
+  }
+  &--left {
+    justify-content: flex-end;
+    @media #{$target-tablet-under} {
+      justify-content: flex-start;
+    }
+  }
+  &--right {
+    justify-content: flex-start;
+  }
+}
+
 .featured-articles__banner {
   //margin-bottom: 226px;
 }
@@ -175,5 +191,7 @@
     }
   }
 }
+
+
 
 

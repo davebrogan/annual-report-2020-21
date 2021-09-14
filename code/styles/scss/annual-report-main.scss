@@ -38,12 +38,3 @@
 ***/
 $banner-bottom: 30px;
 
-.banner--subpage--students {
-  @include bg-interchange-retina('');
-  margin-bottom: $banner-bottom;
-}
-.banner--costume {
-  @include bg-interchange-retina('');
-  margin-bottom: $banner-bottom;
-}
-

@@ -22,6 +22,14 @@ Article Background Banners
   margin: 30px 0;
   @include bg-interchange-retina('https://www.weber.edu/wsuimages/annualreport/2021/images/faculty-staff/sustainability-1x.jpg');
 }
+.banner--outdoor {
+  @include bg-interchange-retina('https://www.weber.edu/wsuimages/annualreport/2021/images/updates/outdoor-center-1px.jpg');
+  min-height: 550px;
+}
+.banner--noorda {
+  @include bg-interchange-retina('https://www.weber.edu/wsuimages/annualreport/2021/images/updates/noorda-1px.jpg');
+  min-height: 600px;
+}
 
 /***
 Regular Article Titles
@@ -41,7 +49,14 @@ Regular Article Titles
 /***
 Pull Quote Background
 ***/
-.pullquote--name {
+.pullquote--cs-flex {
   background-color: #ece9ef;
   margin-bottom: 20px;
+}
+.pullquote--lemmons {
+  background-color: wsu-palette($wsublue-colors, 3);
+}
+.pullquote--patrick {
+  max-width: 400px;
+  background-color: wsu-palette($wcpurp-colors, 3);
 }

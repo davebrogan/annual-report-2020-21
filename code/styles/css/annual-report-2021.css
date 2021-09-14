@@ -384,6 +384,18 @@ FEATURED STORIES **********************************
   align-items: center;
 }
 
+.menu-stack--left {
+  justify-content: flex-end;
+}
+@media only screen and (max-width: 767px) {
+  .menu-stack--left {
+    justify-content: flex-start;
+  }
+}
+.menu-stack--right {
+  justify-content: flex-start;
+}
+
 .banner-feature {
   padding: 1em;
   min-height: 400px;
@@ -504,21 +516,26 @@ strong, b {
 *************** NEW H1 *****************************************
 ****************************************************************
 ***************************************************************/
+.showcase-html-section h1 {
+  color: #492365;
+  font-family: tradegothicltstd-boldext, sans-serif;
+  padding: 1em 0;
+  text-align: center;
+  font-size: 2em;
+}
 .showcase-html-section h1.page-title-banner {
   width: 100%;
   padding: 1em;
-  text-align: center;
-  color: #492365;
   background: url("https://www.weber.edu/wsuimages/annualreport/2021/graphics/section-header-mtns.svg") #f3f3f3;
   background-repeat: no-repeat;
   background-position: 30% 50%;
   background-size: 27%;
   font-size: 3em;
 }
-.showcase-html-section h1.page-title-banner span.page-title-banner__tg {
+.showcase-html-section h1 span.page-title-banner__tg {
   font-family: "tradegothiclt", sans-serif;
 }
-.showcase-html-section h1.page-title-banner span.page-title-banner__ext {
+.showcase-html-section h1 span.page-title-banner__ext {
   font-family: "tradegothicltstd-boldext", sans-serif;
   text-transform: uppercase;
 }
@@ -649,6 +666,10 @@ Pull-Quotes
   font-family: "tradegothiclt-condeighteen", sans-serif !important;
   font-size: 2em;
 }
+.ar-pullquote__body--giant {
+  font-family: "tradegothiclt-condeighteen", sans-serif !important;
+  font-size: 3em;
+}
 .ar-pullquote--flex {
   display: flex;
   flex-direction: column;
@@ -762,14 +783,19 @@ Pull-Quote Stats
 /***
 FACTS AND FIGURES
 ***/
+.fact-head-text {
+  color: #fff !important;
+  font-size: 3em !important;
+}
+
 .fact-row {
   display: flex;
-  border-bottom: 2px solid #492365;
+  border-bottom: 2px solid #FFFFFF;
   padding-top: 40px;
   padding-bottom: 40px;
 }
 .fact-row .bord-rt {
-  border-right: 2px solid #492365;
+  border-right: 2px solid #FFFFFF;
 }
 .fact-row .fact-box-centered {
   display: flex;
@@ -781,9 +807,6 @@ FACTS AND FIGURES
 }
 .fact-row .column {
   padding: 2%;
-  /*@media only screen and (min-width: 700px) and (max-width: 1023px) {
-      padding: 0 20%;
-  }*/
 }
 @media only screen and (min-width: 1024px) {
   .fact-row .column img:not(.no-max) {
@@ -791,6 +814,13 @@ FACTS AND FIGURES
     display: block;
     margin: 0 auto;
   }
+}
+.fact-row.fact-row-last {
+  border-bottom: none;
+}
+
+.fact-box.military {
+  background: none;
 }
 
 /***
@@ -839,6 +869,26 @@ Article Background Banners
   }
 }
 
+.banner--outdoor {
+  background-image: url("https://www.weber.edu/wsuimages/annualreport/2021/images/updates/outdoor-center-1px.jpg");
+  min-height: 550px;
+}
+@media only screen and (min-width: 1024px) and (min-resolution: 192dpi) {
+  .banner--outdoor {
+    background-image: url("https://www.weber.edu/wsuimages/annualreport/2021/images/updates/outdoor-center-1px.jpg");
+  }
+}
+
+.banner--noorda {
+  background-image: url("https://www.weber.edu/wsuimages/annualreport/2021/images/updates/noorda-1px.jpg");
+  min-height: 600px;
+}
+@media only screen and (min-width: 1024px) and (min-resolution: 192dpi) {
+  .banner--noorda {
+    background-image: url("https://www.weber.edu/wsuimages/annualreport/2021/images/updates/noorda-1px.jpg");
+  }
+}
+
 /***
 Regular Article Titles
 ***/
@@ -855,30 +905,20 @@ Regular Article Titles
 /***
 Pull Quote Background
 ***/
-.pullquote--name {
+.pullquote--cs-flex {
   background-color: #ece9ef;
   margin-bottom: 20px;
+}
+
+.pullquote--lemmons {
+  background-color: #d6dfea;
+}
+
+.pullquote--patrick {
+  max-width: 400px;
+  background-color: #dbd3e0;
 }
 
 /***
 **** SUBPAGE BANNERS
 ***/
-.banner--subpage--students {
-  background-image: url("");
-  margin-bottom: 30px;
-}
-@media only screen and (min-width: 1024px) and (min-resolution: 192dpi) {
-  .banner--subpage--students {
-    background-image: url("");
-  }
-}
-
-.banner--costume {
-  background-image: url("");
-  margin-bottom: 30px;
-}
-@media only screen and (min-width: 1024px) and (min-resolution: 192dpi) {
-  .banner--costume {
-    background-image: url("");
-  }
-}
