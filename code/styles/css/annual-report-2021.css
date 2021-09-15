@@ -889,6 +889,17 @@ Article Background Banners
   }
 }
 
+.banner--innovation {
+  background-image: url("https://www.weber.edu/wsuimages/annualreport/2021/images/learning/virt-innov-1x.jpg");
+  min-height: 600px;
+  background-position: center bottom;
+}
+@media only screen and (min-width: 1024px) and (min-resolution: 192dpi) {
+  .banner--innovation {
+    background-image: url("https://www.weber.edu/wsuimages/annualreport/2021/images/learning/virt-innov-2x.jpg");
+  }
+}
+
 /***
 Regular Article Titles
 ***/
@@ -903,8 +914,12 @@ Regular Article Titles
 }
 
 /***
-Pull Quote Background
+Pull Quote Background and modifiers
 ***/
+h3.ar-pullquote__title {
+  font-size: 1.5rem;
+}
+
 .pullquote--cs-flex {
   background-color: #ece9ef;
   margin-bottom: 20px;
@@ -917,6 +932,16 @@ Pull Quote Background
 .pullquote--patrick {
   max-width: 400px;
   background-color: #dbd3e0;
+}
+
+.pullquote--hot-topic {
+  background-color: #edd3d4;
+}
+.pullquote--hot-topic .ar-stat__description {
+  margin-bottom: 0;
+}
+.pullquote--hot-topic .ar-stat__number {
+  font-size: 2em;
 }
 
 /***

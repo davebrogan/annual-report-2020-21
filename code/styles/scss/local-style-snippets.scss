@@ -30,6 +30,11 @@ Article Background Banners
   @include bg-interchange-retina('https://www.weber.edu/wsuimages/annualreport/2021/images/updates/noorda-1px.jpg');
   min-height: 600px;
 }
+.banner--innovation {
+  @include bg-interchange-retina('https://www.weber.edu/wsuimages/annualreport/2021/images/learning/virt-innov-1x.jpg');
+  min-height: 600px;
+  background-position: center bottom;
+}
 
 /***
 Regular Article Titles
@@ -47,8 +52,11 @@ Regular Article Titles
 }
 
 /***
-Pull Quote Background
+Pull Quote Background and modifiers
 ***/
+h3.ar-pullquote__title {
+  font-size: 1.5rem;
+}
 .pullquote--cs-flex {
   background-color: #ece9ef;
   margin-bottom: 20px;
@@ -59,4 +67,13 @@ Pull Quote Background
 .pullquote--patrick {
   max-width: 400px;
   background-color: wsu-palette($wcpurp-colors, 3);
+}
+.pullquote--hot-topic {
+  background-color: wsu-palette($wsured-colors, 3);
+  .ar-stat__description {
+    margin-bottom: 0;
+  }
+  .ar-stat__number {
+    font-size: 2em;
+  }
 }
