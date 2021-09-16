@@ -900,6 +900,38 @@ Article Background Banners
   }
 }
 
+.banner--learn-work {
+  background-image: url("https://www.weber.edu/wsuimages/annualreport/2021/images/community/learn-work-1x.jpg");
+}
+@media only screen and (min-width: 1024px) and (min-resolution: 192dpi) {
+  .banner--learn-work {
+    background-image: url("https://www.weber.edu/wsuimages/annualreport/2021/images/community/learn-work-2x.jpg");
+  }
+}
+
+.banner--golf {
+  background-image: url("https://www.weber.edu/wsuimages/annualreport/2021/images/athletics/golf-cropped-1x.jpg");
+  min-height: 600px;
+}
+@media only screen and (min-width: 1024px) and (min-resolution: 192dpi) {
+  .banner--golf {
+    background-image: url("https://www.weber.edu/wsuimages/annualreport/2021/images/athletics/golf-cropped-2x.jpg");
+  }
+}
+.banner--golf .color-background-box {
+  max-width: 800px;
+}
+
+.banner--summer {
+  background-image: url("https://www.weber.edu/wsuimages/annualreport/2021/images/athletics/summer-allen-1x.jpg");
+  min-height: 600px;
+}
+@media only screen and (min-width: 1024px) and (min-resolution: 192dpi) {
+  .banner--summer {
+    background-image: url("https://www.weber.edu/wsuimages/annualreport/2021/images/athletics/summer-allen-2x.jpg");
+  }
+}
+
 /***
 Regular Article Titles
 ***/
@@ -942,6 +974,20 @@ h3.ar-pullquote__title {
 }
 .pullquote--hot-topic .ar-stat__number {
   font-size: 2em;
+}
+
+.pullquote--dreamers {
+  background-color: #ccdedb;
+}
+
+.pullquote--entrepreneurs {
+  background-color: #dad7d4;
+  max-width: 400px;
+}
+
+.pullquote--sanders {
+  background-color: #edf7df;
+  max-width: 350px;
 }
 
 /***

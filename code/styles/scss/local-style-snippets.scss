@@ -35,7 +35,20 @@ Article Background Banners
   min-height: 600px;
   background-position: center bottom;
 }
-
+.banner--learn-work {
+  @include bg-interchange-retina('https://www.weber.edu/wsuimages/annualreport/2021/images/community/learn-work-1x.jpg');
+}
+.banner--golf {
+  @include bg-interchange-retina('https://www.weber.edu/wsuimages/annualreport/2021/images/athletics/golf-cropped-1x.jpg');
+  min-height: 600px;
+  .color-background-box {
+    max-width: 800px;
+  }
+}
+.banner--summer {
+  @include bg-interchange-retina('https://www.weber.edu/wsuimages/annualreport/2021/images/athletics/summer-allen-1x.jpg');
+  min-height: 600px;
+}
 /***
 Regular Article Titles
 ***/
@@ -76,4 +89,16 @@ h3.ar-pullquote__title {
   .ar-stat__number {
     font-size: 2em;
   }
+}
+
+.pullquote--dreamers {
+  background-color: wsu-palette($wsugreen-colors, 3);
+}
+.pullquote--entrepreneurs {
+  background-color: wsu-palette($godd-colors, 3);
+  max-width: 400px;
+}
+.pullquote--sanders {
+  background-color: wsu-palette($moyes-colors, 3);
+  max-width: 350px;
 }
