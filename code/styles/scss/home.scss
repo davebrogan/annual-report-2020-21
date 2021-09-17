@@ -55,6 +55,9 @@ LINK STRIP ************************************
     &:hover {
       color: wsu-palette($hlcolor-colors, 2);
     }
+    &:visited {
+      color: #FFF;
+    }
     &.menu-item {
       width: 100%;
     }
@@ -186,15 +189,6 @@ FEATURED STORIES **********************************
     .feature-tile__title a:hover {
       color: #A391B1;
     }
-
-    .feature-tile__img {
-      -webkit-clip-path: polygon(0 0, 70% 0, 100% 100%, 0 100%);
-      clip-path: polygon(0 0, 70% 0, 100% 100%, 0 100%);
-      @media #{$target-laptop-over} {
-        -webkit-clip-path: polygon(0 0, 70% 0, 87% 100%, 0 100%);
-        clip-path: polygon(0 0, 70% 0, 87% 100%, 0 100%);
-      }
-    }
   }
 
   &--right {
@@ -215,15 +209,6 @@ FEATURED STORIES **********************************
 
     .feature-tile__title a:hover {
       color: wsu-palette($wcpurp-colors, 1);
-    }
-
-    .feature-tile__img {
-      -webkit-clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
-      clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
-      @media #{$target-laptop-over} {
-        -webkit-clip-path: polygon(30% 0, 100% 0, 100% 100%, 13% 100%);
-        clip-path: polygon(30% 0, 100% 0, 100% 100%, 13% 100%);
-      }
     }
   }
 

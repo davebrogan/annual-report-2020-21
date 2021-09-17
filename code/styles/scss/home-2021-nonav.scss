@@ -7,7 +7,7 @@
 *******************************************************
  *****************************************************/
 body {
-  background-image: url(https://www.weber.edu/wsuimages/annualreport/2021/images/ar-home-header2-1x.jpg) !important;
+  background-image: url(https://www.weber.edu/wsuimages/annualreport/2021/images/ar-home-header2.jpg) !important;
   background-size: cover;
   height: 100vh;
   background-repeat: no-repeat;
@@ -15,50 +15,17 @@ body {
   background-position-x: 40%;
   background-position-y: 0;
 }
-@media only screen and (min-width: $target-tablet-over) {
+@media #{$target-tablet-over} {
   body {
     background-position-y: -400px;
   }
 }
-/*.home-background {
-  position: relative;
-  top: 0;
-  height: 100vh;
-  background-image: url(https://www.weber.edu/wsuimages/annualreport/2021/images/ar-home-header.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position-x: 40%;
-  background-position-y: 0;
-}*/
-
-/*.showcase-html-section {
-  background-color: transparent;
-}*/
-
-/*.banner-wrap {
-  position: relative;
-  top: 0;
-  //height: 100vh;
-  background-image: url(https://www.weber.edu/wsuimages/annualreport/2021/images/ar-home-header.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position-x: 40%;
-  background-position-y: 0;
-}
-@media only screen and (min-width: 769px) {
-  .banner-wrap {
-    background-position-y: -400px;
-  }
-}*/
 
 .links-titles {
   background-color: #FFF;
 }
 
 .first-title {
-  //margin-bottom: 500px;
   position: fixed;
   top: 0;
   width: 100vw;
@@ -74,9 +41,7 @@ body {
     }
     &__image {
       margin: 0;
-      //display: none;
       width: 350px;
-
     }
     &__description {
       margin: 0;
@@ -86,7 +51,6 @@ body {
 }
 
 .giant-spacer {
-  //height: calc(100vh - 236px);
   height: 100vh;
 }
 
@@ -96,26 +60,17 @@ body {
 
 .banner-knockout {
   position: relative;
-  //height: 100vh;
-  //width: 100vw;
 }
 
 .freeze-knockout {
   position: sticky;
   top: 0;
-  //right: 0;
-  //left: 0;
   bottom: 0;
-  //z-index: -100;
   width: 100vw;
-  //height: calc(100vh - 200px);
 }
 
 .home-main-content {
   background-color: #FFF;
-}
-.ar-logo-second {
-  //height: 3000px;
 }
 
 .ar-logo__wrapper {
@@ -145,19 +100,12 @@ body {
   }
 }
 
-.featured-articles__banner {
-  //margin-bottom: 226px;
-}
-
 .banner {
   &-feature {
-    //@include aspect-ratio-source(2400, 770);
     padding: 1em;
-    //margin-bottom: 180px;
     min-height: 400px;
     @media #{$target-tablet-under} {
       padding: 0;
-      //margin-bottom: 100px;
     }
     &__background-box {
       position: absolute;
