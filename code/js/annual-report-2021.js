@@ -40,7 +40,7 @@ window.addEventListener('load', function(e) {
             }
         })
     } else {
-        bannerWrap.style.backgroundPositionY = '0';
+        body.style.backgroundPositionY = '0';
     }
 })
 
