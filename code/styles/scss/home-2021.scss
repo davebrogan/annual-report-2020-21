@@ -36,7 +36,7 @@ body {
   background-size: contain;
 }
 
-@supports (-webkit-touch-callout: none) {
+@supports not (-webkit-touch-callout: none) {
   body {
     background-image: url(https://www.weber.edu/wsuimages/annualreport/2021/images/ar-home-header2.jpg) !important;
     background-repeat: no-repeat;
