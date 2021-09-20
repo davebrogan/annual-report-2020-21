@@ -267,20 +267,48 @@ FEATURED STORIES **********************************
 /********************* HOME 2021 **********************
 *******************************************************
  *****************************************************/
-/*body {
-  background-image: url(https://www.weber.edu/wsuimages/annualreport/2021/images/ar-home-header2.jpg) !important;
-  background-size: cover;
+/******************************
+PASTE INTO HOME PAGE HEAD CSS
+*******************************
+body {
   //height: 100vh;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   background-position-x: 40%;
   background-position-y: 0;
+  background-size: contain;
 }
 @media only screen and (min-width: 769px) {
   body {
+    background-image: url(https://www.weber.edu/wsuimages/annualreport/2021/images/ar-home-header2.jpg) !important;
+    background-repeat: no-repeat;
+    background-position-x: 40%;
+    background-position-y: 0;
     background-position-y: -400px;
+    background-attachment: fixed;
+    background-size: cover;
   }
-}*/
+}
+
+or
+body {
+  //height: 100vh;
+  background-position-x: 40%;
+  background-position-y: 0;
+  background-size: contain;
+}
+
+@supports (-webkit-touch-callout: none) {
+  body {
+    background-image: url(https://www.weber.edu/wsuimages/annualreport/2021/images/ar-home-header2.jpg) !important;
+    background-repeat: no-repeat;
+    background-position-x: 40%;
+    background-position-y: 0;
+    background-position-y: -400px;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+}
+
+*****************************/
 .links-titles {
   background-color: #FFF;
 }
@@ -321,11 +349,48 @@ FEATURED STORIES **********************************
   transform: translate3d(0, -100%, 0);
 }
 
+.new-bg {
+  display: none;
+}
+@supports (-webkit-touch-callout: none) {
+  .new-bg {
+    display: block;
+    background-image: url(https://www.weber.edu/wsuimages/annualreport/2021/images/ar-home-header2.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+.knockout-pad {
+  display: none;
+}
+@supports (-webkit-touch-callout: none) {
+  .knockout-pad {
+    background-color: #fff;
+    height: 20vh;
+    position: relative;
+    margin-top: -10px;
+    margin-bottom: -10px;
+  }
+  @media (orientation: portrait) {
+    .knockout-pad {
+      display: block;
+    }
+  }
+}
+
 .banner-knockout {
   position: relative;
 }
 
 .freeze-knockout {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   bottom: 0;
@@ -338,6 +403,20 @@ FEATURED STORIES **********************************
 
 .ar-logo__wrapper {
   z-index: 100;
+}
+
+.ar-logo-second {
+  display: flex;
+}
+@supports (-webkit-touch-callout: none) {
+  .ar-logo-second {
+    display: none;
+  }
+}
+
+.home-main-content {
+  background-color: #FFF;
+  position: relative;
 }
 
 .menu-stack li .menu-disc {
@@ -442,6 +521,18 @@ FEATURED STORIES **********************************
   .banner-feature--athletics {
     background-image: url("https://www.weber.edu/wsuimages/annualreport/2021/images/home/vball-2x.jpg");
   }
+}
+
+.link-strip a:visited {
+  color: #fff;
+}
+
+.showcase-html-section .link-strip a:hover {
+  color: #c1a2d5;
+}
+
+a.menu-item:hover {
+  color: #fff !important;
 }
 
 /***
@@ -898,14 +989,10 @@ Article Background Banners
 /***
 Regular Article Titles
 ***/
-.regular-article__title {
-  margin-bottom: 20px !important;
-}
-
 .regular-article__subtitle, .text-box__subtitle {
   font-family: "tradegothicltcom-bdcn20obl", sans-serif;
   font-size: 1.3em;
-  margin-bottom: 20px !important;
+  margin-bottom: 0 !important;
 }
 
 /***
