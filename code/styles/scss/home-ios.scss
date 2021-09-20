@@ -6,20 +6,28 @@
 /********************* HOME 2021 **********************
 *******************************************************
  *****************************************************/
-/*body {
-  background-image: url(https://www.weber.edu/wsuimages/annualreport/2021/images/ar-home-header2.jpg) !important;
+
+/******************************
+PASTE INTO HOME PAGE HEAD CSS
+*******************************
+body {
   //height: 100vh;
-  background-repeat: no-repeat;
   background-position-x: 40%;
   background-position-y: 0;
+  background-size: contain;
 }
 @media #{$target-tablet-over} {
   body {
+    background-image: url(https://www.weber.edu/wsuimages/annualreport/2021/images/ar-home-header2.jpg) !important;
+    background-repeat: no-repeat;
+    background-position-x: 40%;
+    background-position-y: 0;
     background-position-y: -400px;
     background-attachment: fixed;
     background-size: cover;
   }
-}*/
+}
+*****************************/
 
 .links-titles {
   background-color: #FFF;
@@ -58,6 +66,32 @@
   transform: translate3d(0, -100%, 0);
 }
 
+.new-bg {
+  background-image: url(https://www.weber.edu/wsuimages/annualreport/2021/images/ar-home-header2.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  @media #{$target-tablet-over} {
+    display: none;
+  }
+}
+
+.knockout-pad {
+  background-color: #fff;
+  height: 20vh;
+  position: relative;
+  margin-top: -10px;
+  margin-bottom: -10px;
+  @media #{$target-tablet-over} {
+    display: none;
+  }
+}
+
 .banner-knockout {
   position: relative;
 }
@@ -69,12 +103,20 @@
   width: 100vw;
 }
 
-.home-main-content {
-  background-color: #FFF;
-}
-
 .ar-logo__wrapper {
   z-index: 100;
+}
+
+.ar-logo-second {
+  display: none;
+  @media #{$target-laptop-over} {
+    display: flex;
+  }
+}
+
+.home-main-content {
+  background-color: #FFF;
+  position: relative;
 }
 
 .menu-stack li .menu-disc {
@@ -153,6 +195,16 @@
       margin-bottom: 300px;
     }
   }
+}
+
+.link-strip a:visited {
+  color: #fff;
+}
+.showcase-html-section .link-strip a:hover {
+  color: #c1a2d5;
+}
+a.menu-item:hover {
+  color: #fff !important;
 }
 
 
