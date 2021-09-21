@@ -156,54 +156,6 @@ CONTENTS ****************************************
   margin-right: 10px;
 }
 
-.pres-disc {
-  background-color: #492365;
-}
-
-.east-disc {
-  background-color: #d25d12;
-}
-
-.lind-disc {
-  background-color: #25cad3;
-}
-
-.moyes-disc {
-  background-color: #a3d55d;
-}
-
-.godd-disc {
-  background-color: #483627;
-}
-
-.students-disc {
-  background-color: #99afc9;
-}
-
-.csbs-disc {
-  background-color: #005f71;
-}
-
-.dumke-disc {
-  background-color: #099844;
-}
-
-.cos-disc {
-  background-color: #f6b221;
-}
-
-.comm-disc {
-  background-color: #a52428;
-}
-
-.athletics-disc {
-  background-color: #a491b2;
-}
-
-.faculty-disc {
-  background-color: #84471e;
-}
-
 a.menu-item {
   display: inline-block;
   text-decoration: none;

@@ -157,10 +157,6 @@ body {
 }
 
 .menu-stack {
-  @media #{$target-tablet-under} {
-    //display: block;
-    // margin-left: 20%;
-  }
   &--left {
     justify-content: flex-end;
     @media #{$target-tablet-under} {
