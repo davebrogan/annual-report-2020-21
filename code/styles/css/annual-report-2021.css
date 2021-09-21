@@ -296,7 +296,7 @@ body {
   background-size: contain;
 }
 
-@supports (-webkit-touch-callout: none) {
+@supports not (-webkit-touch-callout: none) {
   body {
     background-image: url(https://www.weber.edu/wsuimages/annualreport/2021/images/ar-home-header2.jpg) !important;
     background-repeat: no-repeat;
@@ -370,18 +370,14 @@ body {
 .knockout-pad {
   display: none;
 }
-@supports (-webkit-touch-callout: none) {
+@media only screen and (max-width: 1023px) and (orientation: portrait) {
   .knockout-pad {
+    display: block;
     background-color: #fff;
-    height: 20vh;
+    height: 25vh;
     position: relative;
     margin-top: -10px;
     margin-bottom: -10px;
-  }
-  @media (orientation: portrait) {
-    .knockout-pad {
-      display: block;
-    }
   }
 }
 
@@ -441,10 +437,12 @@ body {
 .banner-feature {
   padding: 1em;
   min-height: 400px;
+  margin-bottom: 300px;
 }
 @media only screen and (max-width: 767px) {
   .banner-feature {
     padding: 0;
+    margin-bottom: 400px;
   }
 }
 .banner-feature__background-box {
@@ -467,7 +465,6 @@ body {
 }
 .banner-feature--digital-district {
   background-image: url("https://www.weber.edu/wsuimages/annualreport/2021/images/home/digital-district-1x.jpg");
-  margin-bottom: 248px;
 }
 @media only screen and (min-width: 1024px) and (min-resolution: 192dpi) {
   .banner-feature--digital-district {
@@ -476,7 +473,6 @@ body {
 }
 .banner-feature--convos {
   background-image: url("https://www.weber.edu/wsuimages/annualreport/2021/images/home/wildcat-convos-1x.jpg");
-  margin-bottom: 300px;
 }
 @media only screen and (min-width: 1024px) and (min-resolution: 192dpi) {
   .banner-feature--convos {
@@ -485,7 +481,7 @@ body {
 }
 .banner-feature--april {
   background-image: url("https://www.weber.edu/wsuimages/annualreport/2021/images/home/april-callister-1x.jpg");
-  margin-bottom: 300px;
+  background-position: 70% top;
 }
 @media only screen and (min-width: 1024px) and (min-resolution: 192dpi) {
   .banner-feature--april {
@@ -494,7 +490,6 @@ body {
 }
 .banner-feature--virtual-innovations {
   background-image: url("https://www.weber.edu/wsuimages/annualreport/2021/images/home/virtual-innovations-1x.jpg");
-  margin-bottom: 300px;
 }
 @media only screen and (min-width: 1024px) and (min-resolution: 192dpi) {
   .banner-feature--virtual-innovations {
@@ -506,7 +501,6 @@ body {
 }
 .banner-feature--sustainability {
   background-image: url("https://www.weber.edu/wsuimages/annualreport/2021/images/home/sustainability-1x.jpg");
-  margin-bottom: 300px;
 }
 @media only screen and (min-width: 1024px) and (min-resolution: 192dpi) {
   .banner-feature--sustainability {
@@ -515,7 +509,6 @@ body {
 }
 .banner-feature--athletics {
   background-image: url("https://www.weber.edu/wsuimages/annualreport/2021/images/home/vball-1x.jpg");
-  margin-bottom: 300px;
 }
 @media only screen and (min-width: 1024px) and (min-resolution: 192dpi) {
   .banner-feature--athletics {

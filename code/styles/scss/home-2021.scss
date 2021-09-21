@@ -105,14 +105,14 @@ body {
 
 .knockout-pad {
   display: none;
-  @supports (-webkit-touch-callout: none) {
-    background-color: #fff;
-    height: 20vh;
-    position: relative;
-    margin-top: -10px;
-    margin-bottom: -10px;
+  @media #{$target-laptop-under} {
     @media (orientation: portrait) {
       display: block;
+      background-color: #fff;
+      height: 25vh;
+      position: relative;
+      margin-top: -10px;
+      margin-bottom: -10px;
     }
   }
 }
@@ -176,8 +176,10 @@ body {
   &-feature {
     padding: 1em;
     min-height: 400px;
+    margin-bottom: 300px;
     @media #{$target-tablet-under} {
       padding: 0;
+      margin-bottom: 400px;
     }
     &__background-box {
       position: absolute;
@@ -197,20 +199,16 @@ body {
     }
     &--digital-district {
       @include bg-interchange-retina('https://www.weber.edu/wsuimages/annualreport/2021/images/home/digital-district-1x.jpg');
-      margin-bottom: 248px;
     }
     &--convos {
       @include bg-interchange-retina('https://www.weber.edu/wsuimages/annualreport/2021/images/home/wildcat-convos-1x.jpg');
-      margin-bottom: 300px;
     }
     &--april {
       @include bg-interchange-retina('https://www.weber.edu/wsuimages/annualreport/2021/images/home/april-callister-1x.jpg');
-      margin-bottom: 300px;
-
+      background-position: 70% top;
     }
     &--virtual-innovations {
       @include bg-interchange-retina('https://www.weber.edu/wsuimages/annualreport/2021/images/home/virtual-innovations-1x.jpg');
-      margin-bottom: 300px;
 
       .banner-feature__background-box {
         top: 68%;
@@ -218,11 +216,9 @@ body {
     }
     &--sustainability {
       @include bg-interchange-retina('https://www.weber.edu/wsuimages/annualreport/2021/images/home/sustainability-1x.jpg');
-      margin-bottom: 300px;
     }
     &--athletics {
       @include bg-interchange-retina('https://www.weber.edu/wsuimages/annualreport/2021/images/home/vball-1x.jpg');
-      margin-bottom: 300px;
     }
   }
 }
